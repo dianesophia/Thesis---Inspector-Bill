@@ -13,8 +13,9 @@ engine.setProperty('rate', 150)
 engine.setProperty('volume', 0.9)
 
 # Load YOLO model
-model = YOLO('nano40.pt')
+model = YOLO('OriginalDatasetTrains/Train1.pt')
 
+#Original Dataset
 classNames = ['Real Fifty', 'Real Five Hundred', 'Real One Hundred',
               'Real One Thousand', 'Real Twenty', 'Real Two Hundred']
 
