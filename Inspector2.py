@@ -4,7 +4,7 @@ import pyttsx3
 import threading
 from ultralytics import YOLO
 from PyQt6.QtWidgets import QApplication, QLabel, QVBoxLayout, QWidget
-from PyQt6.QtGui import QImage, QPixmap
+from PyQt6.QtGui import QImage, QPixmap, QIcon
 from PyQt6.QtCore import QTimer, Qt
 
 # Initialize text-to-speech
@@ -13,7 +13,7 @@ engine.setProperty('rate', 150)
 engine.setProperty('volume', 0.9)
 
 # Load YOLO model
-model = YOLO('New100.pt')  # Ensure this model is well-trained
+model = YOLO('YoloScratchTrains/New100.pt')  # Ensure this model is well-trained
 
 # Class labels
 classNames = ["Unknown", "One Hundred", "One Thousand", "Twenty", "Two Hundred", "Fifty", "Five Hundred"]
@@ -43,6 +43,8 @@ class ObjectDetectionApp(QWidget):
         super().__init__()
         self.setWindowTitle("Object Detection with YOLO")
         self.setGeometry(100, 100, 800, 700)
+
+        self.setWindowIcon(QIcon("icon.png"))
 
         # Layout
         layout = QVBoxLayout()
