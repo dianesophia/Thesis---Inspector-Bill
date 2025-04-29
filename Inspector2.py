@@ -13,10 +13,14 @@ engine.setProperty('rate', 150)
 engine.setProperty('volume', 0.9)
 
 # Load YOLO model
-model = YOLO('YoloScratchTrains/New100.pt')  # Ensure this model is well-trained
+model = YOLO('YoloScratchTrains/yoloExtention.pt')
+#model = YOLO('OriginalDatasetTrains/Train1.pt')
 
-# Class labels
+# New Datasets
 classNames = ["Unknown", "One Hundred", "One Thousand", "Twenty", "Two Hundred", "Fifty", "Five Hundred"]
+
+#old dataset
+#classNames = ['Real Fifty', 'Real Five Hundred', 'Real One Hundred','Real One Thousand', 'Real Twenty', 'Real Two Hundred']
 
 # Webcam Setup
 cap = cv2.VideoCapture(1)
@@ -85,7 +89,7 @@ class ObjectDetectionApp(QWidget):
         resized_img = cv2.resize(img, (320, 320))  # Downscaling improves speed
 
         # Run YOLO detection with **higher confidence and IoU thresholds**
-        results = model(resized_img, conf=0.85, iou=0.6)  # Higher confidence, higher IoU
+        results = model(resized_img, conf=0.70, iou=0.6)  # Higher confidence, higher IoU
 
         for r in results:
             for box in r.boxes:
@@ -94,7 +98,7 @@ class ObjectDetectionApp(QWidget):
                 cls = int(box.cls[0])
 
                 # **Stricter filtering for precision**
-                if conf < 0.85 or cls >= len(classNames) or cls == 0:
+                if conf < 0.70 or cls >= len(classNames) or cls == 0:
                     continue  # Ignore weak detections and "Unknown" class
 
                 label = f"{classNames[cls]} {conf:.2f}"
@@ -127,6 +131,8 @@ app = QApplication([])
 window = ObjectDetectionApp()
 window.show()
 app.exec()
+
+
 
 cap.release()
 cv2.destroyAllWindows()
