@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0eee0921-f3c8-4f43-aab8-09c43d06d61e" name="Changes" comment="" />
+    <list default="true" id="0eee0921-f3c8-4f43-aab8-09c43d06d61e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Table11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tables.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bill.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldMoney100.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/oldMoney50.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sss2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/table1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/table2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/total.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/thesis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/thesis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InspectorBill.py" beforeDir="false" afterPath="$PROJECT_DIR$/InspectorBill.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Stub" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dianesophia&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dianesophia/Thesis---Inspector-Bill.git&quot;,
+    &quot;accountId&quot;: &quot;449db7b3-e4b0-49b1-afe2-20253439dfd1&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2t2BYHvqE6duCIn6Ge5Hx0DgZuE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -18,13 +62,33 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "Python.Database.executor": "Run",
+    "Python.InspectorBill.executor": "Run",
+    "Python.Table11.executor": "Run",
+    "Python.Tables.executor": "Run",
+    "Python.bill.executor": "Run",
+    "Python.camm.executor": "Run",
+    "Python.sss2.executor": "Run",
+    "Python.ssss.executor": "Run",
+    "Python.table1.executor": "Run",
+    "Python.table2.executor": "Run",
+    "Python.total.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Diane/Documents/Bill"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Diane\Documents\Thesis" />
+      <recent name="C:\Users\Diane\Documents\Thesis\myenv" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+        <option value="bundled-python-sdk-fc1d50d2d915-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.24978.54" />
       </set>
     </attachedChunks>
   </component>

@@ -13,14 +13,24 @@ engine.setProperty('rate', 150)
 engine.setProperty('volume', 0.9)
 
 # Load YOLO model
+<<<<<<< HEAD
 model = YOLO('OriginalDatasetTrains/Train1.pt')
 
 #Original Dataset`
 classNames = ['Real Fifty', 'Real Five Hundred', 'Real One Hundred',
               'Real One Thousand', 'Real Twenty', 'Real Two Hundred']
+=======
+#model = YOLO('nano40.pt')
+model = YOLO('oldMoney100.pt')
+>>>>>>> fed7463 (ADFEWR)
 
+#classNames = ['Real Fifty', 'Real Five Hundred', 'Real One Hundred','Real One Thousand', 'Real Twenty', 'Real Two Hundred']
+classNames = ["One Hundred", "One Thousand", "Twenty", "Two Hundred", "Fifty", "Five Hundred"]
 # Set up webcam
+
 cap = cv2.VideoCapture(0)
+#cap = cv2.VideoCapture("http://192.168.160.193:4747/video")
+
 cap.set(3, 640)
 cap.set(4, 640)
 
