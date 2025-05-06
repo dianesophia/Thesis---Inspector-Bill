@@ -1,20 +1,7 @@
-🛠️ Tech StackPython
-*  OpenCV (for image processing)
-*  YOLOv8 (for currency detection)
-*  PyQt6 (for GUI)
-*  pyttsx3 (for text-to-speech conversion)
-* Threading & Queue (for optimized speech processing)
-
-🚀 How It WorksLaunch the application.
-1. The webcam starts capturing video.
-2. The YOLO model detects and identifies currency denominations.
-3. The detected objects are displayed on-screen with bounding boxes.
-4. The text-to-speech engine announces the detected denomination.
-
 
 # 💵 Inspector Bill
 
-An Machine learning powered model that detects and identifies **currency denominations** in real-time using your **webcam**, with **audio feedback** for accessibility. Built with **Python**, **YOLOv8**, **OpenCV**, and **PyQt6**.
+An Machine Learning-powered model that detects and identifies **currency denominations** in real-time using your **webcam**, with **audio feedback** for accessibility. Built with **Python**, **YOLOv8**, **OpenCV**, and **PyQt6**.
 
 ---
 
@@ -48,3 +35,76 @@ An Machine learning powered model that detects and identifies **currency denomin
 ```bash
 git clone https://github.com/your-username/inspector-bill.git
 cd inspector-bill
+```
+
+### 2. (Optional) Create a Virtual Environment
+
+```bash
+python -m venv venv
+# On Windows
+venv\Scripts\activate
+# On macOS/Linux
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+opencv-python
+pyttsx3
+pyqt6
+ultralytics
+```
+
+### 4. Add Required Files
+
+–- Trained YOLOv8 model file --
+* Train1.pt
+* Train2.pt
+* Train3.pt
+* Train4.pt
+* Train5.pt
+* Train6.pt
+* Train7.pt
+* Train8.pt
+* Train9.pt
+* Train10.pt 
+  
+- `icon.png` application icon
+
+---
+
+## 🧪 Running the Application
+
+```bash
+python InspectorBill.py
+```
+
+> ⚠️ If your webcam does not work, try changing this line:
+```python
+cap = cv2.VideoCapture(1)
+```
+to:
+```python
+cap = cv2.VideoCapture(0)
+```
+
+📱 Using a phone as a webcam (e.g., with Iriun Webcam)?
+>Make sure the Iriun app is running on your phone and desktop. Then try different camera indices:
+```python
+cap = cv2.VideoCapture(2)  # or 3, depending on your system
+```
+---
+
+## 🗣️ Detected Classes
+
+The app is currently trained to recognize:
+
+- One Hundred
+- Two Hundred
+- Five Hundred
+- One Thousand
+- Twenty
+- Fifty
+- Damage Bill
+
+---
+
