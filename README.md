@@ -14,7 +14,7 @@
 
 # 💵 Inspector Bill
 
-An AI-powered desktop application that detects and identifies **currency denominations** in real-time using your **webcam**, with **audio feedback** for accessibility. Built with **Python**, **YOLOv8**, **OpenCV**, and **PyQt6**.
+An Machine learning powered model that detects and identifies **currency denominations** in real-time using your **webcam**, with **audio feedback** for accessibility. Built with **Python**, **YOLOv8**, **OpenCV**, and **PyQt6**.
 
 ---
 
