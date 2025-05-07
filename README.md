@@ -1,7 +1,6 @@
-
 # 💵 Inspector Bill
 
-An Machine Learning-powered model that detects and identifies **currency denominations** in real-time using your **webcam**, with **audio feedback** for accessibility. Built with **Python**, **YOLOv8**, **OpenCV**, and **PyQt6**.
+A Machine Learning-powered model that detects and identifies **currency denominations** in real-time using your **webcam**, with **audio feedback** for accessibility. Built with **Python**, **YOLOv8**, **OpenCV**, and **PyQt6**.
 
 ---
 
@@ -48,6 +47,8 @@ source venv/bin/activate
 ```
 
 ### 3. Install Dependencies
+
+```
 opencv-python
 pyttsx3
 pyqt6
@@ -88,10 +89,11 @@ cap = cv2.VideoCapture(0)
 ```
 
 📱 Using a phone as a webcam (e.g., with Iriun Webcam)?
->Make sure the Iriun app is running on your phone and desktop. Then try different camera indices:
+> Make sure the Iriun app is running on your phone and desktop. Then try different camera indices:
 ```python
 cap = cv2.VideoCapture(2)  # or 3, depending on your system
 ```
+
 ---
 
 ## 🗣️ Detected Classes
@@ -105,6 +107,3 @@ The app is currently trained to recognize:
 - Twenty
 - Fifty
 - Damage Bill
-
----
-
